@@ -1,0 +1,15 @@
+<h1> here is your new game </h1>
+
+<ul>
+<% @grid.each do |letter| %>
+    <li> <%=letter%> </li>
+<% end %>
+</ul>
+
+
+<form action="/score" method="get">
+<input type="text" name="sentence" placeholder="write here">
+<input type="hidden" name="grid" value="<%= @grid.join %>">
+<input type="hidden" name="start_time" value="<%=@start_time%>">
+<input class="btn btn-primary" type="submit" value="submit" >
+</form>

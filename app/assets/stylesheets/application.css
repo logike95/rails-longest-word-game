@@ -13,3 +13,109 @@
  *= require_tree .
  *= require_self
  */
+
+ul {
+list-style: none;
+display: flex;
+flex-direction : row;
+letter-spacing: 2px;
+}
+
+
+li{
+
+  border: 1px solid black;
+  padding: 10px;
+  font-family: Verdana;
+  font-weight:bold;
+
+}
+
+
+
+  /* background-repeat: répétition du fond; peut être "no repeat", "repeat-x" (horitontalement)"repeat-y" */
+  /* background-attachement permet de fixer ou non le fond, fixed or scroll --> l'image de fond défile avec le texte */
+  /* float : left ou right; s'applique à un bloc */
+  /* background-position : placer le fond; */
+  /* opacity : se règle entre 0 et 1, par exemple op acity : 0.7; */
+  /* border-width, border-color, border-style (none, solid, dotted, dashed,double, groove) : appliquer des bordures; */
+    /* border-top : bordure du haut ; border-bottom : bordure du bas ; border-left : bordure de gauche ; border-right : bordure de droite */
+    /* border-radius:10px ; arrondie
+    box-shadow: 2px 5px, 3px, 0px; (horizontale, verticale, fondu, couleur) */
+  /* box-shadow : s'applique à tout le bloc et prend quatre valeurs dans l'ordre suivant : le décalage horizontal de l'ombre ; le décalage vertical de l'ombre ;
+  l'adoucissement du dégradé ; la couleur de l'ombre. Pour une ombre noire de 6 pixels, sans adoucissement, on écrira : box-shadow: 6px 6px 0px black; /*
+  /* text-shadow : l'ombre du texte */
+
+  /*  hover permet de changer l'apparence au survol (par exemple : a:hover pour modifier l'apparence des liens lorsque la souris pointe dessus).
+    active modifie l'apparence des liens au moment du clic, :visited lorsqu'un lien a déjà été visité.
+    focus permet de modifier l'apparence d'un élément sélectionné. */
+
+  /* Margin : margin-top, margin-bottom, margin-left, margin-right; Marge
+    Padding: Padding-top, padding-right, padding-bottom, padding-left; : Marge interieure;
+Pour centrer un element, il faut respecter les règles suivantes :
+
+donnez une largeur au bloc (avec la propriétéwidth) ;
+indiquez que vous voulez des marges extérieures automatiques, comme ceci :margin: auto;.
+
+  /* word-wrap:break-word; que el texte ne dépasse pas la taille d'un bloque, et qu'il se coupe dès que le texte risque de dépasser /*
+
+
+/*mise en forme du texte :;
+
+  font-family : verdana etc..;
+  font-face:source ;
+  font-size
+  font-weight:bold, normal;
+  font-style:oblique, italic normal;
+    Text-decoration : can be "line-trough", "overline", "none"
+  text-transform:capitalize, uppercase, lowercase;
+  text-align: left, center, right, justify
+  text-indent: 25px; --> alinea
+  text-shadow: 5px 5px 2px blue; (horizontale, verticale, fondu, couleur)
+  overflow: auto => overflow sert a que le texte ne depasse pas da div
+
+      */
+
+      /* propriété de couleur et de fond :
+      color : couleur du texte; soit rgb(255,0;255), soit hexo avec #F00
+      background-color: couleur d'arrière fond;
+      background-image: url (image.png);
+      background-attachement: fixed or scroll;fond fixe ou pas
+      background-repeat: repeat-x, repeat-y, no-repeat;
+      background-position:top, center, bottom, left, right; position du fond
+      opacity ; 0 et 1 ; transparence
+
+      */
+
+
+      /* Propriétés de positionnement et d'affichage :
+
+          display: block, inline, inline-block, table, tablecell, none --> converti n'importe quelle  type d'élement
+          visibility: visible, hidden ; visibilité
+          clip: ; 0px, 0px, 0px, 0px = haut; droite,bas, gauche : Affichage d'une partie de l'element;
+          overflow : auto, sroll, visible, hidden ; Comportement en cas de dépassement !!!!!!!
+          float: left, right, none;
+          clear : left, right, both, none; Arrêt d'un flottant
+          position: relative, absolute, static; Positionnement précis  (absolute; il nous permet de placer un élément n'importe où sur la page)
+            static : identique au positionnement absolu mais, cette fois, l'élément reste toujours visible, même si on descend plus bas dans la page
+        relative : permet de décaler l'élément par rapport à sa position normale
+        + dire ou on veut dans la page : top, bottom, left, right;
+          top : 20px ; Position par rapport au haut
+          left: 20px; Position par rapport à la gauche
+          right: 20px; Position par rapport à la droite
+          Bottom: 20px; Position par rapport au bas
+          z-index: 10 ; Ordre d'affichage en cas de superposition. La plus grande valeur est affichée par-dessus les autres.
+      margin :marge exterieure ;
+      padding : marge interieure;
+
+ FLEXBOX
+
+display : flex;
+flex-direction : column, row;
+flex-wrap: retour à la ligne pour les elements; Nowrap (pas de retour à la ligne, wrap = retour a la ligne)
+justify-content : space-between, space-around, center; flex-end, flex-start : permet d'aligner sur l'axe principal;
+align-items : changer leur alignement sur l'axe secondaire :  stretch : les éléments sont étirés sur tout l'axe (valeur par défaut)
+flex-start : alignés au début
+flex-end : alignés à la fin
+center : alignés au centre
+baseline : alignés sur la ligne de base (semblable à flex-start);
